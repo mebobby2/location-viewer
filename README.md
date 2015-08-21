@@ -11,5 +11,7 @@ and with it the ability to install and use libraries from npm.
 - npm to install the dependencies
 - run while developing: node_modules/.bin/watchify -v -d -t [ reactify --es6 ] main.js -o compiled.js
   Watchify will monitor your files and recompile your source code if needed. The compiled file is compiled.js 
+
+## Production ready
 - Once you are happy with your code, run: NODE_ENV=production node_modules/.bin/browserify -t [ reactify --es6 ] main.js | node_modules/.bin/uglifyjs > compiled.min.js
   This create minified compile which you can use in production.
